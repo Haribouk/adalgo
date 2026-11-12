@@ -10,6 +10,11 @@
  */
 export const estPositif = (n) => {
   // à compléter
+  if (n >= 0) {
+    return true
+  } else {
+    return false
+  }
 }
 
 /**
@@ -20,8 +25,12 @@ export const estPositif = (n) => {
  */
 export const estPair = (n) => {
   // à compléter
+  if (n % 2 === 0) {
+    return true
+  } else {
+    return false
+  }
 }
-
 /**
  * Retourne le plus grand des deux nombres. Sans Math.max().
  * @param {number} a
@@ -31,6 +40,11 @@ export const estPair = (n) => {
  */
 export const max = (a, b) => {
   // à compléter
+  if (a > b) {
+    return a
+  } else {
+    return b
+  }
 }
 
 /**
@@ -43,6 +57,17 @@ export const max = (a, b) => {
  */
 export const mention = (note) => {
   // à compléter
+  if (note >= 16) {
+    return "Très bien"
+  } else if (note >= 14) {
+      return "Bien"
+  } else if (note >= 12) {
+      return "Assez bien"
+  } else if (note >= 10) {
+      return "Passable"
+  } else {
+      return "Insuffisant"
+  }
 }
 
 /**

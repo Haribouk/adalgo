@@ -10,6 +10,13 @@
  */
 export const maximum = (tableau) => {
   // à compléter
+  let max = tableau[0];
+  for (let i=1; i < tableau.length; i++) {
+    if (tableau[i] > max) {
+      max = tableau[i]
+    } 
+  }
+  return max
 }
 
 /**
@@ -20,6 +27,13 @@ export const maximum = (tableau) => {
  */
 export const minimum = (tableau) => {
   // à compléter
+  let min = tableau[0];
+  for (let i=1; i < tableau.length; i++) {
+    if (tableau[i] < min) {
+      min = tableau[i]
+    } 
+  }
+  return min
 }
 
 /**
@@ -30,6 +44,16 @@ export const minimum = (tableau) => {
  */
 export const moyenne = (tableau) => {
   // à compléter
+  if (tableau.length === 0) {
+    return null
+  }
+  let somme = 0
+  let moy = 0
+  for (let i=0; i < tableau.length; i++) {
+    somme += tableau[i]
+  }
+  moy = somme / tableau.length
+  return moy
 }
 
 /**
@@ -42,6 +66,12 @@ export const moyenne = (tableau) => {
  */
 export const contient = (tableau, valeur) => {
   // à compléter
+  for (let i=0; i < tableau.length; i++) {
+    if (tableau[i] === valeur) {
+      return true
+    }
+  }
+  return false
 }
 
 /**
@@ -53,6 +83,13 @@ export const contient = (tableau, valeur) => {
  */
 export const compter = (tableau, valeur) => {
   // à compléter
+  let compteur = 0
+  for (let i=0; i < tableau.length; i++) {
+    if (tableau[i] === valeur) {
+      compteur++
+    }
+  }
+  return compteur
 }
 
 /**

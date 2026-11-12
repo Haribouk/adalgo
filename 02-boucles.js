@@ -9,6 +9,9 @@
  */
 export const compterJusqua = (n) => {
   // à compléter
+  for (let i=1; i <= n; i++){
+    console.log(i)
+  }
 }
 
 /**
@@ -19,6 +22,9 @@ export const compterJusqua = (n) => {
  */
 export const afficherPairs = (n) => {
   // à compléter
+  for (let i=1; i<=n; i++){
+    if (n % 2 == 0) console.log(i)
+  }
 }
 
 /**
@@ -30,6 +36,11 @@ export const afficherPairs = (n) => {
  */
 export const somme = (n) => {
   // à compléter
+  let s = 0
+  for (let i=1; i<=n; i++){
+    s += i
+  }
+  return s
 }
 
 /**
@@ -42,6 +53,12 @@ export const somme = (n) => {
  */
 export const produit = (n) => {
   // à compléter
+  let p = 1
+  if (n == 0) return p
+  for (let i=1; i<=n; i++){
+    p *= i
+  }
+  return p
 }
 
 /**
@@ -54,6 +71,11 @@ export const produit = (n) => {
  */
 export const compterPairs = (n) => {
   // à compléter
+  let compteur = 0
+  for (let i=1; i<=n; i++){
+    if (i % 2 == 0) compteur++
+  }
+  return compteur
 }
 
 /**
@@ -66,6 +88,15 @@ export const compterPairs = (n) => {
  */
 export const table = (n) => {
   // à compléter
+  let tab = []
+  let j = 0
+  for (let i=1; i<=(n*n); i++){
+    if (i % n == 0){
+      tab[j] = i
+      j += 1
+    }
+  }
+  return tab
 }
 
 /**
@@ -79,6 +110,15 @@ export const table = (n) => {
  */
 export const multiplesJusqua = (n, limite) => {
   // à compléter
+  let tab = []
+  let j = 0
+  for (let i=1; i<=limite; i++){
+    if ((i % n == 0) && (i <= limite)) {
+      tab[j] = i
+      j += 1
+    }
+  }
+  return tab
 }
 
 /**
